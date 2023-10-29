@@ -40,7 +40,7 @@ void app_main(void)
     ssd1306_clear_screen(ssd1306_dev, 0x00);
 
     xTaskCreate(&display_task, "DisplayTask", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
-    vTaskStartScheduler();
+    // vTaskStartScheduler();
 
     while(1)
     {
